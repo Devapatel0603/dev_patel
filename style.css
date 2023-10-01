@@ -1,0 +1,328 @@
+/* <------------Navbar--------------> */
+.nav-item{
+    margin: 1vw;
+}
+
+.n{
+    color: white;
+}
+
+/* <------------Home--------------> */
+.home {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    /* background-color: red; */
+    height: 85vh;
+    width: 49.5vw;
+    background-image: url("Images/Myimage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+}
+
+.right {
+    float: right;
+    /* background-color: blue; */
+    height: 85vh;
+    width: 49.5vw;
+    text-align: center;
+    padding: 36vh 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 4vmax;
+}
+
+.dev{
+    color: darkblue;
+    font-weight: bold;
+}
+
+.dev:hover {
+    cursor: pointer;
+}
+
+/* <--------------Heading----------------> */
+.heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.8vmax;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.heading:hover {
+    font-size: 3.9vmax;
+    cursor: pointer;
+}
+
+/* <--------------About----------------> */
+.about{
+    height: 27vmax;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.about-left{
+    /* background-color: red; */
+    height: 27vmax;
+    width: 61%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 3.5vmax;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5vmax 7vmax;
+    box-sizing: border-box;
+}
+
+.about-right{
+    background-image: url("Images/aboutme.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 27vmax;
+    width: 39%;
+}
+
+/* <---------------Project----------------> */
+.project{
+    height: 20vmax;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.project-left-heading{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3vmax;
+    text-decoration: underline;
+    width: 100%;
+    padding: 0 0 0 2vw;
+}
+
+.project-right{
+    /* background-color: green; */
+    height: 20vmax;
+    width: 61%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 3.5vmax;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5vmax 7vmax;
+    box-sizing: border-box;
+}
+
+.project-left{
+    /* background-color: red; */
+    background-image: url("Images/curriculum.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20vmax;
+    width: 39%;
+}
+
+/* <-------------------Skills------------------------> */
+.skills{
+    /* background-color: red; */
+    height: 28vmin;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1.5vmax;
+}
+
+.c,.java,.js,.mysql,.css,.html,.python{
+    /* background-color: blue; */
+    height: 100px;
+    width: 100px;
+}
+
+.c{
+    background-image: url("Images/c.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.java{
+    background-image: url("Images/java.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.python{
+    background-image: url("Images/python.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.html{
+    background-image: url("Images/html.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.css{
+    background-image: url("Images/css.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.js{
+    background-image: url("Images/js.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mysql{
+    background-image: url("Images/mysql.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* <-------------------Contact------------------------> */
+.contact{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1.3vmax;
+}
+
+.instagram, .linkedin, .github, .gmail, .facebook {
+    height: 28px;
+    width: 28px;
+}
+
+/* <--------------------Footer-----------------------> */
+footer{
+    margin: 1.3vmax 0 0 0;
+}
+.copy{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* <--------------Media query for home---------------------> */
+@media only screen and (max-width: 230px) {
+    .left{
+        height: 60vmax
+    }
+}
+@media only screen and (max-width: 480px) {
+    .heading{
+        height: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:last baseline;
+    }
+
+    .left {
+        height: 70%;
+        width: 100vw;
+        background-size: contain;
+    }
+
+    .right {
+        width: 100vw;
+        height: 30%;
+        padding: 32% 0;
+    }
+}
+
+/* <-----------Media quary for about-------------> */
+@media only screen and (max-width: 780px) {
+    .about{
+        height: auto;
+    }
+
+    .about-left{
+        height: auto;
+        width: 100%;
+        padding: 0 1.3vmax;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+        line-height: 35px;
+    }
+
+    .about-right{
+        height: 350px;
+        width: 100%;
+        background-size: auto 100%;
+        background-position: center;
+    }
+}
+
+/* <-----------Media quary for project-------------> */
+@media only screen and (max-width: 780px) {
+    .project{
+        height: auto;
+    }
+    .project-right{
+        height: auto;
+        width: 100vw;
+        padding: 0 1.3vmax;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+        line-height: 35px;
+    }
+    .project-left{
+        height: 275px;
+        width: 100%;
+        background-size: auto 100%;
+        background-position: center;
+    }
+}
+
+/* <-----------Media quary for skills-------------> */
+@media only screen and (max-width: 780px) {
+    .skills{
+        height: auto;
+    }
+    .c,.java,.mysql,.js,.html,.css,.python{
+        margin: 20px;
+    }
+    .css{
+        line-break: strict;
+    }
+}
+
+/* <-----------Media quary for contact-------------> */
+@media only screen and (max-width: 600px){
+    .contact{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .instagram,.linkedin,.gmail,.facebook,.github{
+        height: 28px;
+        width: 28px;
+        margin: 40px
+    }
+}
