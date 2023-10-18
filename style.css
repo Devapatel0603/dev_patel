@@ -21,6 +21,7 @@
     /* background-color: red; */
     height: 85vh;
     width: 49.5vw;
+    /* display: block; */
     background-image: url("Images/Myimage.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -65,7 +66,7 @@
 
 /* <--------------About----------------> */
 .about{
-    height: 27vmax;
+    height: 45vmax;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -74,14 +75,16 @@
 
 .about-left{
     /* background-color: red; */
-    height: 27vmax;
+    height: 45vmax;
     width: 61%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     line-height: 3.5vmax;
     text-align: justify;
-    text-justify: inter-word;
-    padding: 5vmax 7vmax;
+    /* text-justify: inter-word; */
+    display: flex;
+    align-items: center;
+    padding: 2vmax 7vmax;
     box-sizing: border-box;
 }
 
@@ -90,7 +93,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 27vmax;
+    height: 45vmax;
     width: 39%;
 }
 
@@ -120,7 +123,7 @@
     line-height: 3.5vmax;
     text-align: justify;
     text-justify: inter-word;
-    padding: 5vmax 7vmax;
+    padding: 3vmax 7vmax;
     box-sizing: border-box;
 }
 
@@ -137,7 +140,7 @@
 /* <-------------------Skills------------------------> */
 .skills{
     /* background-color: red; */
-    height: 28vmin;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -234,11 +237,11 @@ footer{
 }
 @media only screen and (max-width: 480px) {
     .heading{
-        height: 15vh;
+        height: 5vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items:last baseline;
+        /* align-items: baseline; */
     }
 
     .left {
@@ -248,9 +251,10 @@ footer{
     }
 
     .right {
+        display: inline-block;
         width: 100vw;
-        height: 30%;
-        padding: 32% 0;
+        height: 15%;
+        padding: 0;
     }
 }
 
@@ -276,7 +280,11 @@ footer{
         background-position: center;
     }
 }
-
+@media only screen and (max-width: 300px){
+    .about-left{
+        font-size: 1rem;
+    }
+}
 /* <-----------Media quary for project-------------> */
 @media only screen and (max-width: 780px) {
     .project{
@@ -295,6 +303,11 @@ footer{
         width: 100%;
         background-size: auto 100%;
         background-position: center;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .project-right{
+        font-size: 1rem;
     }
 }
 
@@ -326,3 +339,34 @@ footer{
         margin: 40px
     }
 }
+
+
+@media only screen and (max-width: 890px){
+    .heading{
+        height: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 480px){
+    .home{
+        display: flex;
+        
+        width: 100vw;
+        height: 50vh;
+    }
+    .left{
+        width: 49.5vw;
+        height: 50vh;
+        float: left;
+        
+    }
+    .right{
+        width: 49.5vw;
+        padding: 20vh 0;
+        height: 50vh;
+        float: right;
+    }
+}
+
